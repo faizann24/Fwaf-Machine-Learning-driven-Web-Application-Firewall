@@ -1,3 +1,9 @@
+'''
+FWAF - Machine Learning driven Web Application Firewall
+Author: Faizan Ahmad
+Website: http://fsecurify.com
+'''
+
 def getNGrams(query): #tokenizer function, this will make 3 grams of each query
 	tempQuery = str(query)
 	ngrams = []
