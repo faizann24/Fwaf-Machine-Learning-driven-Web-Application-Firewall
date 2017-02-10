@@ -4,6 +4,18 @@ Author: Faizan Ahmad
 Website: http://fsecurify.com
 '''
 
+import pandas as pd
+import numpy as np
+import random
+from sklearn.feature_extraction.text import TfidfVectorizer
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
+import matplotlib.pyplot as plt
+from sklearn.cross_validation import train_test_split
+from sklearn.linear_model import LogisticRegression
+import urllib
+
 def getNGrams(query): #tokenizer function, this will make 3 grams of each query
 	tempQuery = str(query)
 	ngrams = []
