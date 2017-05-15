@@ -16,8 +16,9 @@ import matplotlib.pyplot as plt
 
 def loadFile(name):
     directory = str(os.getcwd())
-    filepath = directory + "/" + name
-    data = open(filepath,'r').readlines()
+    filepath = os.path.join(directory, name)
+    with open(filepath,'r') as f:
+        data = f.readlines()
     data = list(set(data))
     result = []
     for d in data:
